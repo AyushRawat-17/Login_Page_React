@@ -1,0 +1,107 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: rgb(193, 193, 247);
+  font-family: "Ubuntu", sans-serif;
+  background-image: url(background.jpg);
+}
+.navigation-bar {
+  margin: 22px 30px 0px 30px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.logo {
+  display: inline-block;
+  font-family: "Oswald", sans-serif;
+  letter-spacing: 2px;
+  color: rgb(17, 17, 216);
+}
+.navigation-list {
+  display: inline;
+  margin-left: 19.6em;
+}
+.navigation-list li {
+  display: inline;
+  list-style-type: none;
+  padding: 20px;
+  font-family: "Roboto", sans-serif;
+}
+.navigation-list li a {
+  text-decoration: none;
+  color: black;
+}
+
+.navigation-list li a:hover {
+  text-decoration: underline;
+  color: rgb(76, 76, 231);
+}
+
+.content {
+  margin: 30px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.fac {
+  background-color: #1a538a;
+}
+
+.git {
+  background-color: #24292e;
+}
+
+.continueButton {
+  padding: 15px 25px;
+  display: block;
+  width: 330px;
+  height: 55px;
+  margin-left: 19px;
+  margin-bottom: 8px;
+}
+
+.form {
+  height: 360px;
+  width: 640px;
+  display: inline-block;
+  padding: 20px;
+}
+
+.form-box {
+  display: inline;
+  width: 95%;
+  margin-bottom: 2px;
+}
+
+.submit-button {
+  margin-left: 125px;
+  margin-top: 15px;
+  width: 45%;
+}
+
+.big-heading {
+  font-weight: 700;
+  line-height: 2px;
+  margin-bottom: 15px;
+  letter-spacing: 2px;
+}
+
+.small-heading {
+  font-weight: 400;
+  line-height: 2px;
+  letter-spacing: 1px;
+}
+
+.image {
+  height: 360px;
+  width: 330px;
+  display: inline-block;
+  padding: 34px 0px;
+}
+
+.main-image {
+  padding: 10px;
+  height: 250px;
+  width: 400px;
+}
