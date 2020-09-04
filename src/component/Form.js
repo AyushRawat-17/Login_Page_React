@@ -1,30 +1,47 @@
 import React from "react";
 
-function Form(){
+function Form(props){
     return (
         <div className="image">
         <div className="login-form">
-            <button type="button" className="btn btn-primary continueButton fac" ><i class="fab fa-facebook-square"></i> &nbsp; Continue with Facebook</button>
-            <button type="button" className="btn btn btn-light continueButton" ><i class="fab fa-google"></i> &nbsp; Continue with Google</button>
-            <button type="button" className="btn btn-primary continueButton git" ><i class="fab fa-github-square"></i> &nbsp; Continue with GitHub</button>
+            <button type="button" className="btn btn-primary continueButton fac" >
+            <a className="button-anchor" href="https://www.facebook.com/">
+            <i class="fab fa-facebook-square"></i>
+             &nbsp; {props.button1}
+             </a>
+             </button>
+            <button type="button" className="btn btn btn-light continueButton" >
+            <a className="button-anchor google" href="https://www.google.com/intl/en-GB/gmail/about/">
+            <i class="fab fa-google"></i>
+             &nbsp; {props.button2}
+             </a>
+             </button>
+            <button type="button" className="btn btn-primary continueButton git" >
+            <a className="button-anchor" href="https://github.com/">
+            <i class="fab fa-github-square"></i>
+             &nbsp; {props.button3}
+             </a>
+             </button>
             <form>
+                <div className="form-div">
                 <i class="fas fa-envelope-square icon-box"></i>
                 <input
                   type="email"
                   className="form-control form-box"
                   id="exampleInputEmail1"
                   aria-describedby="emailHelp"
-                  placeholder="Email"
+                  placeholder={props.form1}
                 />
-                <br/>
-              <i class="fas fa-unlock-alt icon"></i>
+                </div>
+                <div className="form-div">
+                <i class="fas fa-unlock-alt icon"></i>
                 <input
                   type="password"
                   className="form-control form-box"
                   id="exampleInputPassword1"
-                  placeholder="Password"
+                  placeholder={props.form2}
                 />
-                <br/>
+                </div>
               <button type="submit" className="btn btn-primary submit-button">
                 Login
               </button>
